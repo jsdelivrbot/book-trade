@@ -1,4 +1,4 @@
 {
-  "dbUri": "mongodb://redaaa:redaader@ds141274.mlab.com:41274/book-trade",
-  "jwtSecret": "a secret phrase!!"
+  "dbUri": "",
+  "jwtSecret": ""
 }
