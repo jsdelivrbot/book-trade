@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+a {
+  color: #00bcd4;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+a:hover {
+  color: #1976d2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.top-bar {
+  padding: 10px 15px;
+  margin-bottom: 0vh;
+  background: #333;
+  box-shadow: 2px 2px 20px black;
+}
+.top-bar::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.top-bar-left {
+  float: left;
+  font-size: 1.5em;
+}
+
+.top-bar-right {
+  float: right;
+  font-size: 1.2em;
+}
+
+.top-bar a,
+.nav a {
+  margin: 0 8px;
+}
+
+.container {
+  margin: 50px auto;
+  text-align: center;
+  width: 700px;
+}
+
+.card-heading {
+  padding: 16px;
+}
+
+.field-line, .button-line {
+  padding: 16px;
+}
+
+.error-message {
+  padding: 0 16px;
+  color: tomato;
+}
+
+.success-message {
+  padding: 0 16px;
+  color: green;
+}
+
+#image{
+  background-image: url("https://i.imgur.com/yWc7cmo.jpg");
+  opacity : 0.7;
+  background-color: black;
+  height: 92vh;
+  background-attachment: fixed;
+  border-bottom: 2px black solid;
+  border-top: 2px black solid;
+  -webkit-animation: slide 25s linear infinite;
+  }
+
+@-webkit-keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -500px -200px;
+    }
+  }
+
+  #title{
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    margin-top: 30vh;
+    color : white;
+    font-size: 25pt;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+#loader,#loader2 {
+    display:none;
+    margin: 0 auto;
+    height: 65px;
+    width:  20%;
+    background: rgba( 255, 255, 255, .8 )
+                url('http://i.stack.imgur.com/FhHRx.gif')
+                50% 50%
+                no-repeat;
+}
+
+#searchResult,#userBooks,#exploreBooks,#tradeBooks{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+
+/*.button {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}*/
+.button{
+  position: absolute;
+  visibility: visible;
+  top:20%;
+  opacity: 0;
+  width:40px;
+  margin:0 auto; left:0px;
+  right:35px;
+  z-index:100;
+  transition: all 0.5s;
+}
+
+.button2{
+  position: absolute;
+  visibility: visible;
+  top:20%;
+  opacity: 0;
+  width:40px;
+  margin:40px auto; left:8px;
+  right:35px;
+  z-index:100;
+  transition: all 0.5s;
+}
+
+.card:hover .button {
+  opacity: 1;
+}
+
+.card:hover .button2 {
+  opacity: 1;
+}
+
+.container {
+  width: 95%;
+}
+
+.delbutton{
+  z-index:101;
+  text-shadow: 1px 1px 20px black;
+  color: black;
+  font-size: 17pt;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.delbutton:hover{
+  color :black;
+  border-radius: 10px;
+  text-shadow: 8px 8px 20px 0 black;
+}
+
+
+.card img:hover{
+  opacity: 0.2;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    width: 12%;
+    margin: 10px;
+    position:relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 8px 8px 20px 0 black;
+    opacity: 0.8;
+}
+
+/* Add some padding inside the card container */
+.infos {
+  padding: 2px 16px;
+}
